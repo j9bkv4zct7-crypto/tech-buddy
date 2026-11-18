@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tech Buddy</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0F2A47">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tech Buddy">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="lock.css" id="tbLockCss">
+</head>
+<body class="tb-locked">
+<main id="tbLock" class="tbl">
+  <div class="tbl-card">
+    <img src="icons/icon.svg" alt="" width="72" height="72">
+    <h1>Tech Buddy</h1>
+    <p class="tbl-sub">Enter your access code</p>
+    <form id="tbForm" autocomplete="off">
+      <input id="tbCode" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="8" autocomplete="off" aria-label="Access code" placeholder="••••••••">
+      <div class="tbl-pad" id="tbPad">
+        <button type="button" data-k="1">1</button><button type="button" data-k="2">2</button><button type="button" data-k="3">3</button>
+        <button type="button" data-k="4">4</button><button type="button" data-k="5">5</button><button type="button" data-k="6">6</button>
+        <button type="button" data-k="7">7</button><button type="button" data-k="8">8</button><button type="button" data-k="9">9</button>
+        <button type="button" data-k="clear" class="tbl-fn">Clear</button><button type="button" data-k="0">0</button><button type="button" data-k="back" class="tbl-fn" aria-label="Delete">&#9003;</button>
+      </div>
+      <button id="tbUnlock" type="submit" class="tbl-go">Unlock</button>
+      <p id="tbMsg" class="tbl-msg" role="status" aria-live="polite"></p>
+    </form>
+    <p class="tbl-foot">Runs on this device only. The code is asked every time the app opens.</p>
+  </div>
+</main>
+<script src="loader.js"></script>
+</body>
+</html>

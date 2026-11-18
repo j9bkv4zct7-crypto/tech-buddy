@@ -1,0 +1,16 @@
+body.tb-locked{margin:0;min-height:100vh;background:#0F2A47;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.tbl{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px;box-sizing:border-box}
+.tbl-card{width:100%;max-width:340px;text-align:center}
+.tbl-card h1{margin:10px 0 2px;font-size:28px}
+.tbl-sub{margin:0 0 16px;opacity:.85}
+#tbCode{width:100%;box-sizing:border-box;font-size:28px;letter-spacing:8px;text-align:center;padding:12px;border-radius:12px;border:2px solid #3d6a99;background:#0b2038;color:#fff}
+#tbCode:focus{outline:none;border-color:#7fb3ff}
+.tbl-pad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}
+.tbl-pad button{font-size:24px;padding:14px 0;border-radius:12px;border:0;background:#1d4370;color:#fff;cursor:pointer}
+.tbl-pad button:active{background:#2b5a90}
+.tbl-pad .tbl-fn{font-size:16px;background:#163556}
+.tbl-go{width:100%;font-size:20px;padding:14px;border-radius:12px;border:0;background:#f5a524;color:#10233a;font-weight:700;cursor:pointer}
+.tbl-go:disabled{opacity:.6}
+.tbl-msg{min-height:1.4em;margin:12px 0 0;color:#ffd38a}
+.tbl-foot{font-size:12px;opacity:.6;margin-top:18px}
+.tb-lockbtn{margin-left:4px}

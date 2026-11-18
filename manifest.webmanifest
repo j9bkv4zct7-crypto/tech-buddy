@@ -1,0 +1,30 @@
+{
+  "name": "Tech Buddy",
+  "short_name": "Tech Buddy",
+  "description": "Turn a technician's repair story into job-aid style punch times and a professional story. Works offline, on your device.",
+  "id": "./",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0F2A47",
+  "theme_color": "#0F2A47",
+  "categories": ["productivity", "business", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Quick mode", "short_name": "Quick", "url": "./?mode=quick", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Full mode", "short_name": "Full", "url": "./?mode=full", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ],
+  "share_target": {
+    "action": "./share-target",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": { "title": "title", "text": "text", "url": "url", "files": [{ "name": "image", "accept": ["image/*"] }] }
+  }
+}
